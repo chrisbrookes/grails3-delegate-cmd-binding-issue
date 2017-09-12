@@ -9,7 +9,7 @@ class TestCmdBindController
         log.debug "params: $params"
         log.debug "cmd: $cmd"
         bindData(cmd, params)
-        log.debug "cmd after bind: $cmd"
+        log.debug "cmd after bindData: $cmd"
         render(view: 'index', model: [cmd: cmd])
     }
 }
