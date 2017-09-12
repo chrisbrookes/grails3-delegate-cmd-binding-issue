@@ -5,6 +5,14 @@
 </head>
 <body>
 
+<g:if test="${cmd.hasErrors()}">
+    <div class="errors">
+        <g:renderErrors bean="${cmd}" />
+    </div>
+
+</g:if>
+
+
 <g:form action="index">
     <div>
         <label>Bind Me</label>
